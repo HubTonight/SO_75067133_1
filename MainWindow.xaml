@@ -1,0 +1,36 @@
+﻿<Window
+    x:Class="SO_75067133.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SO_75067133"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Horizontal">
+        <Grid
+            Width="200"
+            Height="200"
+            Style="{StaticResource Style1}" />
+        <Grid
+            Width="200"
+            Height="200"
+            Style="{StaticResource Style2}" />
+        <Grid Width="200" Height="200">
+            <Grid.Background>
+                <VisualBrush Stretch="None">
+                    <VisualBrush.Visual>
+                        <local:MyUserControl />
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </Grid.Background>
+        </Grid>
+        <Grid
+            Width="200"
+            Height="200"
+            Style="{StaticResource Style3}" />
+    </StackPanel>
+</Window>
